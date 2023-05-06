@@ -1,15 +1,15 @@
 :root {
-  --blanco: #ffffff;
-  --primario: #182C61;
-  --secundario: #3B3B98;
-  --gris: #CAD3C8;
-  --oscuro: #2C3A47;
+  --rosa: #ffe0ff;
+  --morado-claro: #d1b2f3;
+  --morado-medio: #a383e7;
+  --morado-oscuro: #7555da;
+  --azul: #4727ce;
+  --negro: #000000;
 }
 
 html {
   box-sizing: border-box;
   min-height: 100%;
-  scroll-snap-type: y mandatory;
 }
 
 *, *:before, *:after {
@@ -22,14 +22,14 @@ p {
 
 body {
   font-family: 'Krub', sans-serif;
-  background-image: linear-gradient(to top, white 0%, #182C61 100%);
+  background-image: linear-gradient(to top, white 0%, var(--azul) 100%);
   min-height: 100%;
 }
 
 header {
-  background-color: var(--primario);
+  background-color: var(--rosa);
   padding: 1rem;
-  color: var(--blanco);
+  color: var(--azul);
   text-align: center;
   font-size: 1.2rem;
   font-weight: 700;
@@ -48,7 +48,7 @@ h2 {
   font-size: 2.4rem;
 }
 h3 {
-  color: var(--blanco);
+  color: var(--rosa);
   font-weight: 400;
   font-size: 1.6rem;
 }
@@ -61,7 +61,7 @@ h3 {
 .sombra {
   padding: 2rem;
   margin-bottom: 3rem;
-  background-color: #3B3B98;
+  background-color: var(--azul);
   border-radius: 10px;
   -webkit-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
   -moz-box-shadow: 0px 11px 15px -9px rgba(0,0,0,0.63);
@@ -69,7 +69,7 @@ h3 {
 }
 
 .nav-bg {
-  background-color: var(--secundario);
+  background-color: var(--morado-medio);
 }
 
 .navegacion {
@@ -96,8 +96,8 @@ h3 {
 }
 
 .navegacion a:hover {
-  background-color: var(--blanco);
-  color: var(--oscuro);
+  background-color: var(--rosa);
+  color: var(--morado-oscuro);
 }
 
 .navegacion a:last-of-type {
@@ -118,8 +118,8 @@ h3 {
 }
 
 .contenido-hero {
-  background-color: rgb(0 0 0 / 70%); /** Otra opción **/
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgb(0 0 0 / 0%); /** Otra opción **/
+  background-color: rgba(0, 0, 0, 0);
   position: absolute;
   width: 100%;
   height: 100%;
@@ -131,12 +131,12 @@ h3 {
 
 .contenido-hero h2, 
 .contenido-hero p {
-  color: var(--blanco);
+  color: var(--negro);
 }
 
 .boton {
-  background-color: var(--secundario);
-  color: var(--blanco);
+  background-color: var(--azul);
+  color: var(--rosa);
   margin-top: .5rem;
   padding: .5rem 3rem;
   border-radius: 5px;
@@ -180,17 +180,17 @@ h3 {
   width: 150px;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--primario);
+  background-color: var(--rosa);
   border-radius: 50%;
 }
 
 .iconos i {
   font-size: 2rem;
-  color: var(--oscuro);
+  color: var(--azul);
 }
 
 .formulario {
-  background-color: var(--gris);
+  background-color: var(--morado-oscuro);
   padding: 2rem;
   border-radius: 10px;
   scroll-snap-align: center;
@@ -200,7 +200,7 @@ h3 {
 .formulario legend {
   text-align: center;
   font-size: 1.2rem;
-  color: var(--primario);
+  color: var(--rosa);
   margin-bottom: 2rem;
   display: block;
   text-transform: uppercase;
@@ -239,7 +239,7 @@ h3 {
 }
 
 .campo label {
-  color: var(--blanco);
+  color: var(--rosa);
   font-weight: 700;
   margin-bottom: .5rem;
   display: block;
@@ -253,7 +253,7 @@ h3 {
 
 .campo input[type="text"],
 .campo input[type="tel"],
-.campo input[type="mail"],
+.campo input[type="email"],
 .campo textarea {
   width: 100%;
   padding: .5rem;
@@ -263,10 +263,8 @@ h3 {
 
 @media (min-width: 768px) {
   :is(.campo) :is( 
-    input[type="text"], 
-    input[type="text"],  
-    input[type="tel"],  
-    input[type="mail"] , 
+    input[type="text"],   
+    input[type="email"] , 
     textarea ) {
     flex: 1;
   }
@@ -286,4 +284,16 @@ h3 {
 
 .footer {
   text-align: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.none {
+  display: none;
+}
+
+[type="submit"]:hover {
+  opacity: 75%;
 }

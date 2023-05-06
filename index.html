@@ -28,12 +28,12 @@
     <div class="contenido-hero">
       <h2>luisDur<span> - Página Personal</span></h2>
       <p>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="74" height="74" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="74" height="74" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <circle cx="12" cy="11" r="3" />
           <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z">
         </svg>
-        México
+        <b> México </b>
       </p>
       
       <a class="boton" href="#contacto">Contactar</a>
@@ -87,26 +87,25 @@
 
     <div id="contacto" class="contacto">
       <h2>Contacto</h2>
-      <form class="formulario" action="#" method="POST">
+      <form class="formulario contact-form" action="#" method="POST">
         <legend>Contáctame llenando todos los campos</legend>
         <div class="contenedor-campos">
-          <div class="campo">
+          <div class="campo w-100">
             <label>Nombre</label>
             <input type="text" name="nombre" placeholder="Nombre" required>
           </div>
-          <div class="campo">
-            <label>Teléfono</label>
-            <input type="tel" name="telefono" placeholder="Teléfono">
-          </div>
           <div class="campo w-100">
             <label>Correo</label>
-            <input type="mail" name="correo" placeholder="Mail">
+            <input type="email" name="correo" placeholder="Email" required>
           </div>
           <div class="campo w-100">
-            <label>Mensaje:</label>
-            <textarea></textarea>
+            <label>Mensaje</label>
+            <textarea name="comments" placeholder="Déjame tus comentarios" required></textarea>
           </div>
         </div><!--.contenedor-campos-->
+        <div class="contact-form-loader text-center none">
+          <img src="img/loader.svg" alt="Enviando...">
+        </div>
         <div class="enviar">
           <input class="boton" type="submit" value="Enviar">
         </div>
@@ -117,5 +116,6 @@
   <footer class="footer">
     <p>© luisDur │ Todos los derechos reservados 2023</p>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
