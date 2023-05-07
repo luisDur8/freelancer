@@ -4,7 +4,6 @@
   --morado-medio: #a383e7;
   --morado-oscuro: #7555da;
   --azul: #4727ce;
-  --negro: #000000;
 }
 
 html {
@@ -22,16 +21,16 @@ p {
 
 body {
   font-family: 'Krub', sans-serif;
-  background-image: linear-gradient(to top, white 0%, var(--azul) 100%);
+  background-image: linear-gradient(to top, white 0%, var(--azul) 50%);
   min-height: 100%;
 }
 
 header {
   background-color: var(--rosa);
-  padding: 1rem;
+  padding: 1.4rem;
   color: var(--azul);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -39,23 +38,23 @@ h1 {
   font-size: 1.4rem;
 }
 h2 span {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
 }
 h1, h2, h3 {
   text-align: center;
 }
 h2 {
-  font-size: 2.4rem;
+  font-size: 3rem;
+  color: var(--rosa);
 }
 h3 {
   color: var(--rosa);
-  font-weight: 400;
   font-size: 1.6rem;
 }
 
 .contenedor {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 800px;
 }
 
 .sombra {
@@ -69,7 +68,7 @@ h3 {
 }
 
 .nav-bg {
-  background-color: var(--morado-medio);
+  background-color: var(--azul);
 }
 
 .navegacion {
@@ -88,10 +87,10 @@ h3 {
 }
 
 .navegacion a{
-  padding: 1rem 2rem;
-  color: var(--blanco);
+  padding: 0.8rem 2rem;
+  color: var(--rosa);
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -111,10 +110,13 @@ h3 {
 }
 
 .hero {
-  height: 450px;
-  background-image: url(../img/hero.jpg);
+  height: 600px;
+  background-image: url(../img/hero.svg);
   margin-bottom: 2rem;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.7;
 }
 
 .contenido-hero {
@@ -131,7 +133,7 @@ h3 {
 
 .contenido-hero h2, 
 .contenido-hero p {
-  color: var(--negro);
+  color: var(--azul);
 }
 
 .boton {
@@ -143,7 +145,7 @@ h3 {
   font-weight: 700;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   border:none;
 }
 
@@ -180,7 +182,7 @@ h3 {
   width: 150px;
   justify-content: space-evenly;
   align-items: center;
-  background-color: var(--rosa);
+  background-color: var(--morado-medio);
   border-radius: 50%;
 }
 
@@ -296,4 +298,9 @@ h3 {
 
 [type="submit"]:hover {
   opacity: 75%;
+}
+
+.description-service {
+  color: var(--rosa);
+  font-weight: 700;
 }
