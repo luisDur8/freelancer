@@ -1,4 +1,5 @@
 :root {
+  --blanco: #ffffff;
   --rosa: #ffe0ff;
   --morado-claro: #d1b2f3;
   --morado-medio: #a383e7;
@@ -58,9 +59,6 @@ h3 {
     display: block;
   }
 }
-
-
-
 
 .contenedor {
   margin: 0 auto;
@@ -155,7 +153,7 @@ h3 {
 
 .boton {
   background-color: var(--azul);
-  color: var(--rosa);
+  color: var(--blanco);
   margin-top: .5rem;
   padding: .5rem 3rem;
   border-radius: 5px;
