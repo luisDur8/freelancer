@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
+
+<!--------------------------- HEAD --------------------------->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +14,12 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<!------------------- BODY ------------------->
+<!--------------------------- BODY --------------------------->
 
 <body>
   <header>Freelancer</header>
 
+<!-------------- BARRA DE NAVEGACION ------------->
   <div class=" nav-bg">
     <nav class="navegacion contenedor">
       <a href="#">Inicio</a>
@@ -26,6 +29,7 @@
     </nav>
   </div>
 
+<!--------------------- HERO --------------------->
   <div class="hero">
     <div class="contenido-hero">
       <h2>luisDur<span> - Página Personal</span></h2>
@@ -42,12 +46,14 @@
     </div>
   </div>
 
-<!------------------- MIS SERVICIOS ------------------->
+<!----------------- MIS SERVICIOS ---------------->
   <div class="contenedor sombra">
     <h2>Mis Servicios</h2>
     <main class="servicios">
+
+<!-- FRONTEND-->
       <div class="servicio">
-        <h3>Fronted</h3>
+        <h3>Frontend</h3>
         <div class="iconos">
           <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-device-laptop" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -59,6 +65,8 @@
           Como desarrollador frontend, me especializo en UI/UX para diseñar y construir interfaces de usuario atractivas y funcionales. Utilizo tecnologías como HTML, CSS (Bootstrap) y JavaScript (React) para garantizar que las páginas web sean responsivas, accesibles y estéticamente agradables en todos los dispositivos y navegadores.
         </p>
       </div>
+
+<!-- BACKEND-->
       <div class="servicio">
         <h3>Backend</h3>
         <div class="iconos">
@@ -75,16 +83,18 @@
           En el desarrollo backend, me encargo de la lógica y la estructura detrás de las aplicaciones web y móviles. Trabajo con lenguajes de programación como Java (Spring Boot) y JS (Node), en bases de datos uso Oracle y MySQL para crear sistemas escalables y seguros que gestionan y procesan datos de manera eficiente.
         </p>
       </div>
+
+<!-- MOBILE-->
       <div class="servicio">
         <h3>Mobile</h3>
         <div class="iconos">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-              <circle cx="9" cy="7" r="4" />
-              <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
-              <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
-            </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-users" width="68" height="68" viewBox="0 0 24 24" stroke-width="2" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+            <circle cx="9" cy="7" r="4" />
+            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            <path d="M21 21v-2a4 4 0 0 0 -3 -3.85" />
+          </svg>
         </div>
         <p class="description-service">
           Como desarrollador de aplicaciones móviles, diseño y programo aplicaciones multiplataforma con los lenguajes modernos React Native y Flutter. Me enfoco en optimizar el rendimiento, la usabilidad y la experiencia del usuario en aplicaciones móviles para ofrecer soluciones sólidas y atractivas.
@@ -92,7 +102,7 @@
       </div>
     </main>
 
-<!------------------- FORM ------------------->
+<!--------------------- FORM --------------------->
     <div id="contacto" class="contacto">
       <h2>Contacto</h2>
       <form class="formulario contact-form" action="#" method="POST">
@@ -110,7 +120,8 @@
             <label>Mensaje</label>
             <textarea name="comments" placeholder="Déjame tus comentarios" required></textarea>
           </div>
-        </div><!--.contenedor-campos-->
+        </div>
+
         <div class="contact-form-loader text-center none">
           <img src="img/loader.svg" alt="Enviando...">
         </div>
@@ -119,10 +130,9 @@
         </div>
       </form>
     </div>
-  </div> <!--.contenedor-->
+  </div>
 
-<!------------------- FOOTER ------------------->
-
+<!---------------------- FOOTER ------------------>
   <footer class="footer">
     <p>© luisDur │ Todos los derechos reservados 2023</p>
   </footer>
