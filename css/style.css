@@ -29,7 +29,7 @@ body {
 header {
   background-color: var(--rosa);
   padding: 1.4rem;
-  color: var(--azul);
+  color: var(--morado-oscuro);
   text-align: center;
   font-size: 1.5rem;
   font-weight: 700;
@@ -103,14 +103,14 @@ h3 {
   font-size: 1rem;
   font-weight: 700;
   border-radius: .5rem;
-  border-block: 2px solid var(--azul);
+  border: 2px solid var(--rosa);
   background-color: var(--azul);
   text-align: center;
 }
 
 .navegacion a:hover {
-  background-color: var(--rosa);
-  color: var(--morado-oscuro);
+  background-color: var(--morado-medio);
+  color: var(--rosa);
 }
 
 .navegacion a:last-of-type {
@@ -121,9 +121,11 @@ h3 {
   .navegacion a{
     margin-bottom: 0;
     border-block: 0;
+    border-radius: 0;
   }
 }
 
+/*----------------------- HERO --------------------*/
 .hero {
   height: 600px;
   background-image: url(../img/hero.svg);
@@ -152,7 +154,7 @@ h3 {
 }
 
 .boton {
-  background-color: var(--azul);
+  background-color: var(--morado-medio);
   color: var(--blanco);
   margin-top: .5rem;
   padding: .5rem 3rem;
@@ -164,6 +166,7 @@ h3 {
   border:none;
 }
 
+/*--------------------- MAIN - SERVICIOS ------------------*/
 .servicios {
   scroll-snap-align: center;
   scroll-snap-stop: always;
@@ -199,6 +202,7 @@ h3 {
   color: var(--azul);
 }
 
+/*----------------------- FORM --------------------*/
 .formulario {
   background-color: var(--morado-oscuro);
   padding: 2rem;
@@ -308,7 +312,7 @@ h3 {
 
 .boton:hover {
   cursor: pointer;
-  opacity: 75%;
+  background-color: var(--azul);
 }
 
 .description-service {
