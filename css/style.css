@@ -5,6 +5,7 @@
   --morado-medio: #a383e7;
   --morado-oscuro: #7555da;
   --azul: #4727ce;
+  --fuente: 'Krub', sans-serif;
 }
 
 html {
@@ -21,7 +22,7 @@ p {
 }
 
 body {
-  font-family: 'Krub', sans-serif;
+  font-family: var(--fuente);
   background-image: linear-gradient(to top, white 0%, var(--azul) 50%);
   min-height: 100%;
 }
@@ -120,7 +121,7 @@ h3 {
 @media (min-width:768px) {
   .navegacion a{
     margin-bottom: 0;
-    border-block: 0;
+    border: 0;
     border-radius: 0;
   }
 }
