@@ -1,6 +1,6 @@
 ## Tu primera página
 
-#### Página _funcional_ básica para practicar los temas básicos de HTML y CSS.
+#### Página _funcional_ básica para practicar los temas básicos de HTML y CSS
 
 ---
 

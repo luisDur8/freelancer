@@ -301,6 +301,9 @@ h3 {
 
 .footer {
   text-align: center;
+  background-color: var(--azul);
+  margin: 0;
+  padding: 1rem 0;
 }
 
 .text-center {
